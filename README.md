@@ -22,6 +22,8 @@ You can embed local or remote images using `![](...)`
 ## Intended uses & limitations
 Intended for text generation for ai-text-adventure(https://github.com/ksjae/ai-text-adventure) with PPLM.
 
+### Downloads
+Download the tar file(divided to fit the 2GB release limit) from the Releases tab.
 
 #### How to use
 
@@ -48,6 +50,7 @@ Initialized with GPT2-large(774M,https://github.com/openai/gpt-2/blob/master/mod
 - NAVER movie reviews
 - Korean news(about 1GB) from a German university
 - Context data from KorSQUAD questions
+- '모두의 말뭉치' from corpus.korean.go.kr
 
 ## Training procedure
 
@@ -62,7 +65,9 @@ TBA
 ### BibTeX entry and citation info
 
 ```bibtex
-@inproceedings{...,
-  year={2020}
-}
+@unpublished{CitekeyUnpublished,
+      author = "Seungjae Kim",
+      title  = "KoGPT2-large : A larger KoGPT2",
+      year   = 2020
+    }
 ```
