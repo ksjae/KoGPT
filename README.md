@@ -1,6 +1,6 @@
 ---
 language: ko
-thumbnail: "url to a thumbnail used in social sharing"
+thumbnail: [https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Ffr%2Fthumb%2F2%2F2d%2FOpenAI_Logo_2017.svg%2F1200px-OpenAI_Logo_2017.svg.png&f=1&nofb=1](url)
 tags:
 - kogpt-2
 - gpt2-large
@@ -16,8 +16,8 @@ metrics:
 KoGPT2-large
 
 ## Model description
-
-You can embed local or remote images using `![](...)`
+GPT2-large trained on ~25GB of Korean datasets.
+see <training data> for more details.
 
 ## Intended uses & limitations
 Intended for text generation for ai-text-adventure(https://github.com/ksjae/ai-text-adventure) with PPLM.
@@ -60,7 +60,14 @@ One paragraph per line(TextDataset)
 Trained on 2x Tesla V100(SXM2 32GB) for weeks
 
 ## Eval results
-TBA
+```
+python3 examples/text-generation/run_generation.py --model_type=gpt2 --model_name_or_path=kogpt2 --length=100 --fp16 --repetition_penalty=2 --p=0.8 --k=20
+```
+
+```
+prompt >>> 나는 어두운 숲 속을 거닐고 있다.
+어느새 나는 그 작은 산들을 향해 뛰기 시작했다. 그리고 내 시야에는 이 골짜기에 대한 어떤 동경도, 혹은 동경과 환희조차 엿보였다가 사라졌다가는 사라져 버리고 말았 다. 그러나 나 역시 그것을 믿지 않았다. 아니 그것도 모른다……. 그렇다면 그것은 또 무슨 말인가? 내가 이렇게 말해도 좋을 텐데…… 하지만 어쨌든 이곳엔 왜 그리 먼 곳에서부터 찾아올까 하고 생각해 보았다. 그래서 그는 지금 어느 한 곳만을 헤매면서 자 꾸만 걸어오는 것일까?
+```
 
 ### BibTeX entry and citation info
 
