@@ -1,6 +1,6 @@
 ---
 language: ko
-thumbnail: [https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Ffr%2Fthumb%2F2%2F2d%2FOpenAI_Logo_2017.svg%2F1200px-OpenAI_Logo_2017.svg.png&f=1&nofb=1](url)
+thumbnail: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Ffr%2Fthumb%2F2%2F2d%2FOpenAI_Logo_2017.svg%2F1200px-OpenAI_Logo_2017.svg.png&f=1&nofb=1"
 tags:
 - kogpt-2
 - gpt2-large
