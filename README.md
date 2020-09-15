@@ -12,19 +12,28 @@ metrics:
 ---
 
 # Model name
-KoGPT2-large
+KoGPT
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s5zZZL8j2waMTkwUOmSOv6IywoBrNm1z?usp=sharing)
+Demo available at : [아무말 대잔치](https://text.ksjit.com)
 
 ## Model description
-GPT2-large trained on ~25GB of Korean datasets.
+GPT2 and GPT3 trained on ~40GB of Korean datasets.
 see [Training data] for more details.
+
+Available models (Not ready ATM):
+- KoGPT2-small(117M)
+- KoGPT2-medium(345M)
+- GPT2-large(774M)
+- GPT2-xlarge(1.5B)
+- GPT3-6.8B
+- GPT3-13B if possible
 
 ## Intended uses & limitations
 Intended for **Korean** text generation for ai-text-adventure(https://github.com/ksjae/ai-text-adventure) with PPLM.
 
 ### Downloads
-Download the tar file(divided to fit the 2GB release limit) from the Releases tab.
+Download files from links at the Releases tab.
 
 #### How to use
 
@@ -43,7 +52,7 @@ If limitations or errors are found, please open an issue.
 
 ## Training data
 
-Initialized with GPT2-large(774M,https://github.com/openai/gpt-2/blob/master/model_card.md). Trained with the following data:
+Initialized with GPT(774M,https://github.com/openai/gpt-2/blob/master/model_card.md). Trained with the following data:
 - Sejong Corpus
 - Namuwiki database dump, Early 2020
 - KCC(Kookmin University Corpus)
@@ -61,6 +70,7 @@ All hyperparameters are the same as GPT2-large
 One paragraph per line(TextDataset)
 
 Trained on 2x Tesla V100(SXM2 32GB) for months
+Some models are trained on v3-8 TPUs.
 
 ## Eval results
 > prompt >>> 나는 어두운 숲 속을 거닐고 있다.
