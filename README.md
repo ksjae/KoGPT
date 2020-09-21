@@ -1,8 +1,8 @@
 ---
 language: ko
 tags:
-- kogpt-2
-- gpt2-large
+- kogpt3
+- gpt3
 - text-generation
 license: MIT
 datasets:
