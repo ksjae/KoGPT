@@ -12,7 +12,7 @@ metrics:
 ---
 
 # Model name
-KoGPT
+KoGPT3
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s5zZZL8j2waMTkwUOmSOv6IywoBrNm1z?usp=sharing)
 Demo available at : [아무말 대잔치](https://text.ksjit.com)
@@ -21,12 +21,13 @@ Demo available at : [아무말 대잔치](https://text.ksjit.com)
 GPT2 and GPT3 trained on ~40GB of Korean datasets.
 see [Training data] for more details.
 
-Available models (Not ready ATM):
-- KoGPT2-small(117M)
-- KoGPT2-medium(345M)
-- GPT2-large(774M)
-- GPT2-xlarge(1.5B)
-- GPT3-6.8B
+Available models (Training ATM):
+- KoGPT3-base(117M)
+- KoGPT3-medium(345M)
+- KoGPT3-large(774M)
+- KoGPT3-xlarge(1.5B)
+- KoGPT3-2.7B
+- KoGPT3-6.7B
 - GPT3-13B if possible
 
 ## Intended uses & limitations
@@ -45,8 +46,6 @@ python3 examples/text-generation/run_generation.py --model_type=gpt2 --model_nam
 Or try out on [colab](https://colab.research.google.com/drive/1s5zZZL8j2waMTkwUOmSOv6IywoBrNm1z?usp=sharing)
 
 #### Limitations and bias
-
-Spacing(띄어쓰기) may be a bit inaccurate, assuming faults in dataset parsing.
 
 If limitations or errors are found, please open an issue.
 
@@ -69,8 +68,9 @@ Initialized with GPT(774M,https://github.com/openai/gpt-2/blob/master/model_card
 All hyperparameters are the same as GPT2-large
 One paragraph per line(TextDataset)
 
-Trained on 2x Tesla V100(SXM2 32GB) for months
+Early models(GPT2-large v0.2 and prior) are trained on 2xTesla V100 for 3~4 weeks.
 Some models are trained on v3-8 TPUs.
+Larger models are trained on v3-128 TPUs.
 
 ## Eval results
 > prompt >>> 나는 어두운 숲 속을 거닐고 있다.
