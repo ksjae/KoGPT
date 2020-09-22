@@ -47,7 +47,10 @@ Or try out on [colab](https://colab.research.google.com/drive/1s5zZZL8j2waMTkwUO
 
 #### Limitations and bias
 
-If limitations or errors are found, please open an issue.
+v0.1 may have faulty tokenizers, producing bad outputs.
+
+v0.2 will be GPT2 with n_ctx of 2048. True form of GPT-3 implementation(alternating layers) will not be available within the year.
+If other limitations or errors are found, please open an issue.
 
 ## Training data
 
@@ -62,6 +65,7 @@ Initialized with GPT(774M,https://github.com/openai/gpt-2/blob/master/model_card
 - Korean news(about 1GB) from a German university
 - Context data from KorSQUAD questions
 - '모두의 말뭉치' from corpus.korean.go.kr
+- COBRA webcrawl (10GB)
 
 ## Training procedure
 
