@@ -1,8 +1,8 @@
 ---
 language: ko
 tags:
-- kogpt3
-- gpt3
+- kogpt2
+- gpt2
 - text-generation
 license: MIT
 datasets:
@@ -12,7 +12,7 @@ metrics:
 ---
 
 # Model name
-KoGPT3
+KoGPT2
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s5zZZL8j2waMTkwUOmSOv6IywoBrNm1z?usp=sharing)
 Demo available at : [아무말 대잔치](https://text.ksjit.com)
@@ -22,12 +22,12 @@ GPT2 and GPT3 trained on ~40GB of Korean datasets.
 see [Training data] for more details.
 
 Available models (Training ATM):
-- KoGPT3-base(117M)
-- KoGPT3-medium(345M)
-- KoGPT3-large(774M)
-- KoGPT3-xlarge(1.5B)
-- KoGPT3-2.7B
-- KoGPT3-6.7B
+- KoGPT2-base(117M)
+- KoGPT2-medium(345M)
+- KoGPT2-large(774M)
+- KoGPT2-xlarge(1.5B)
+- KoGPT2-2.7B
+- KoGPT2-6.7B
 - GPT3-13B if possible
 
 ## Intended uses & limitations
@@ -35,6 +35,7 @@ Intended for **Korean** text generation for ai-text-adventure(https://github.com
 
 ### Downloads
 Download files from links at the Releases tab.
+*Will be available from HuggingFace Model Hub soon*
 
 #### How to use
 
@@ -78,6 +79,7 @@ Larger models are trained on v3-128 TPUs.
 
 ## Eval results
 > prompt >>> 나는 어두운 숲 속을 거닐고 있다.
+
 > 어느새 나는 그 작은 산들을 향해 뛰기 시작했다. 그리고 내 시야에는 이 골짜기에 대한 어떤 동경도, 혹은 동경과 환희조차 엿보였다가 사라졌다가는 사라져 버리고 말았 다. 그러나 나 역시 그것을 믿지 않았다. 아니 그것도 모른다……. 그렇다면 그것은 또 무슨 말인가? 내가 이렇게 말해도 좋을 텐데…… 하지만 어쨌든 이곳엔 왜 그리 먼 곳에서부터 찾아올까 하고 생각해 보았다. 그래서 그는 지금 어느 한 곳만을 헤매면서 자 꾸만 걸어오는 것일까?
 
 
@@ -86,7 +88,7 @@ Larger models are trained on v3-128 TPUs.
 ```bibtex
 @unpublished{CitekeyUnpublished,
       author = "Seungjae Kim",
-      title  = "KoGPT2-large : A larger KoGPT2",
+      title  = "KoGPT : Larger versions of KoGPT2",
       year   = 2020
     }
 ```
