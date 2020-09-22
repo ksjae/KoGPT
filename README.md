@@ -35,6 +35,8 @@ Intended for **Korean** text generation for ai-text-adventure(https://github.com
 
 ### Downloads
 Download files from links at the Releases tab.
+Alternatively, it is available from [my own server(wget-friendly)](https://static.ksjit.com)
+
 *Will be available from HuggingFace Model Hub soon*
 
 #### How to use
