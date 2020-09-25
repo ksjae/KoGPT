@@ -57,18 +57,28 @@ If other limitations or errors are found, please open an issue.
 
 ## Training data
 
-Initialized with GPT(774M,https://github.com/openai/gpt-2/blob/master/model_card.md). Trained with the following data:
-- Sejong Corpus
+Initialized with GPT(774M,https://github.com/openai/gpt-2/blob/master/model_card.md).
+
+The following data was used, and is available for redistribution [here](https://static.ksjit.com/datasets):
+
 - Namuwiki database dump, Early 2020
 - KCC(Kookmin University Corpus)
 - Dump of Korean Wikipedia
-- A *PRIVATE* collection of korean novels(with copyright cleared)
-- Game storylines (with authors' approval)
 - NAVER movie reviews
-- Korean news(about 1GB) from a German university
+- Korean news(about 1GB) from Leipzig(a German university)
 - Context data from KorSQUAD questions
+- Parsed CommonCrawl data(WIP)
+
+Please note the completed dataset includes <|endoftext|> tags.
+
+The following data were used, but is unavailable for redistribution:
+
+- Sejong Corpus
 - '모두의 말뭉치' from corpus.korean.go.kr
-- COBRA webcrawl (10GB)
+- A *PRIVATE* collection of korean novels
+- Webcrawl of modern, uploaded text novels('텍본' - If you want to prevent your novel from going in the training set, please contact me and I will blacklist it)
+- Game storylines (with authors' approval)
+
 
 ## Training procedure
 
