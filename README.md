@@ -19,15 +19,15 @@ Demo available at : [아무말 대잔치](https://text.ksjit.com)
 
 ## Model description
 GPT2 and GPT3 trained on ~40GB of Korean datasets.
-see [Training data] for more details.
+see the included json files for hyperparameter details.
 
 Available models (Training ATM):
 - KoGPT2-base(117M)
 - KoGPT2-medium(345M)
 - KoGPT2-large(774M)
 - KoGPT2-xlarge(1.5B)
-- KoGPT2-2.7B
-- KoGPT2-6.7B
+- KoGPT3-2.7B
+- KoGPT3-6.7B
 - GPT3-13B if possible
 
 ## Intended uses & limitations
@@ -37,22 +37,18 @@ Intended for **Korean** text generation for ai-text-adventure(https://github.com
 Download files from links at the Releases tab.
 Alternatively, it is available from [my own server(wget-friendly)](https://static.ksjit.com)
 
-*Will be available from HuggingFace Model Hub soon*
-
 #### How to use
 
-from huggingface/transformers
-```bash
-python3 examples/text-generation/run_generation.py --model_type=gpt2 --model_name_or_path=kogpt2 --length=100 --fp16 --repetition_penalty=2 --p=0.8 --k=20
-```
+Try out on [colab](https://colab.research.google.com/drive/1s5zZZL8j2waMTkwUOmSOv6IywoBrNm1z?usp=sharing)
 
-Or try out on [colab](https://colab.research.google.com/drive/1s5zZZL8j2waMTkwUOmSOv6IywoBrNm1z?usp=sharing)
+or go to [KoGPT2-train](https://github.com/ksjae/KoGPT2-train) and use scripts/demo.py 
 
 #### Limitations and bias
 
 v0.1 may have faulty tokenizers, producing bad outputs.
 
-v0.2 will be GPT2 with n_ctx of 2048. True form of GPT-3 implementation(alternating layers) will not be available within the year.
+v0.2+ be GPT2 with n_ctx of 2048. True form of GPT-3 implementation(alternating layers) will not be available within the year.
+v0.2-story is producing hashtags (which were not finetuned for)
 If other limitations or errors are found, please open an issue.
 
 ## Training data
@@ -67,7 +63,7 @@ The following data was used, and is available for redistribution [here](https://
 - NAVER movie reviews
 - Korean news(about 1GB) from Leipzig(a German university)
 - Context data from KorSQUAD questions
-- Parsed CommonCrawl data(WIP)
+- Parsed Korean CommonCrawl data(WIP)
 
 Please note the completed dataset includes <|endoftext|> tags.
 
@@ -86,13 +82,16 @@ All hyperparameters are the same as GPT2-large
 One paragraph per line(TextDataset)
 
 Early models(GPT2-large v0.2 and prior) are trained on 2xTesla V100 for 3~4 weeks.
-Some models are trained on v3-8 TPUs.
-Larger models are trained on v3-128 TPUs.
+Models up to XL size are trained on v3-8 TPUs.
 
 ## Eval results
 > prompt >>> 나는 어두운 숲 속을 거닐고 있다.
 
+### v0.1 (xl)
 > 어느새 나는 그 작은 산들을 향해 뛰기 시작했다. 그리고 내 시야에는 이 골짜기에 대한 어떤 동경도, 혹은 동경과 환희조차 엿보였다가 사라졌다가는 사라져 버리고 말았 다. 그러나 나 역시 그것을 믿지 않았다. 아니 그것도 모른다……. 그렇다면 그것은 또 무슨 말인가? 내가 이렇게 말해도 좋을 텐데…… 하지만 어쨌든 이곳엔 왜 그리 먼 곳에서부터 찾아올까 하고 생각해 보았다. 그래서 그는 지금 어느 한 곳만을 헤매면서 자 꾸만 걸어오는 것일까?
+
+### v0.2-story (xl)
+> 나는 어두운 숲 속을 거닐고 있다. #앨리건트테이블 의 #코코넛젤리 색이 넘 예쁘고 맛나다. #그릭요거트 원물이 들어간 마지막  베이커리 #말차초코케이크 도 맛나고 겉에 초코도 두껍게 씹히고..✨💕💕👍🏻 . . #앨리건트테이블 @eleganttable_  #간식 #카페어니언베이커리베이커 #콩콩볼 #쿠키 #디저트맛집 #디저트카페 #dessert #카페스타그램 #맛스타그램 #먹스타 그램 #먹방 #일상 #daily
 
 
 ### BibTeX entry and citation info
@@ -100,7 +99,7 @@ Larger models are trained on v3-128 TPUs.
 ```bibtex
 @unpublished{CitekeyUnpublished,
       author = "Seungjae Kim",
-      title  = "KoGPT : Larger versions of KoGPT2",
+      title  = "Introducing larger KoGPT2",
       year   = 2020
     }
 ```
