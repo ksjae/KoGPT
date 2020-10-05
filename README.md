@@ -14,6 +14,8 @@ metrics:
 # Model name
 KoGPT2
 
+<a href="https://www.buymeacoffee.com/ksjae" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s5zZZL8j2waMTkwUOmSOv6IywoBrNm1z?usp=sharing)
 Demo available at : [아무말 대잔치](https://text.ksjit.com)
 
