@@ -28,9 +28,7 @@ Available models (Training ATM):
 - KoGPT2-medium(345M)
 - KoGPT2-large(774M)
 - KoGPT2-xlarge(1.5B)
-- KoGPT3-2.7B
-- KoGPT3-6.7B
-- GPT3-13B if possible
+- KoGPT2-2.7B
 
 ## Intended uses & limitations
 Intended for **Korean** text generation for ai-text-adventure(https://github.com/ksjae/ai-text-adventure) with PPLM.
