@@ -28,7 +28,11 @@ Available models (Training ATM):
 - KoGPT2-medium(345M)
 - KoGPT2-large(774M)
 - KoGPT2-xlarge(1.5B)
-- KoGPT2-2.7B
+- KoGPT2-2.7B *TBA*
+
+Models are available as TF checkpoint files [Training script](https://github.com/ksjae/KoGPT2-train) or [Huggingface transformers](https://github.com/huggingface/transformers.git) compatible ones
+
+n_ctx available : 1024 2048 384
 
 ## Intended uses & limitations
 Intended for **Korean** text generation for ai-text-adventure(https://github.com/ksjae/ai-text-adventure) with PPLM.
@@ -48,7 +52,7 @@ or go to [KoGPT2-train](https://github.com/ksjae/KoGPT2-train) and use scripts/d
 v0.1 may have faulty tokenizers, producing bad outputs.
 
 v0.2+ be GPT2 with n_ctx of 2048. True form of GPT-3 implementation(alternating layers) will not be available within the year.
-v0.2-story is producing hashtags (which were not finetuned for)
+
 If other limitations or errors are found, please open an issue.
 
 ## Training data
