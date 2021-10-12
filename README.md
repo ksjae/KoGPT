@@ -6,10 +6,11 @@ tags:
 - text-generation
 license: MIT
 datasets:
-- array of dataset identifiers
+- custom
 metrics:
-- array of metric identifiers
+- none
 ---
+**This model is no longer actively in training due to lack of computing resources. NIPA측의 정책 변경으로 고성능컴퓨팅 지원대상에서 제외됨에 따라, 모델 훈련을 더 이상 진행할 수 없게 되었습니다.**
 
 # Model name
 KoGPT2
@@ -17,7 +18,8 @@ KoGPT2
 <a href="https://www.buymeacoffee.com/ksjae" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1s5zZZL8j2waMTkwUOmSOv6IywoBrNm1z?usp=sharing)
-Demo available at : [아무말 대잔치](https://text.ksjit.com)
+
+Demo **NOT** available at : [아무말 대잔치](https://text.ksjit.com)
 
 ## Model description
 GPT2 and GPT3 trained on ~40GB of Korean datasets.
